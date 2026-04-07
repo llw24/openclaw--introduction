@@ -187,6 +187,60 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 </div>
 </div>
 </section>
+<!-- ==================== HOOK ==================== -->
+<section class="slide">
+<div class="slide-content">
+<div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 3rem;">
+<p class="section-label" data-i18n="sec-news-label">新闻速览</p>
+<h2 data-i18n="sec-news-title" style="font-size:2.5rem;font-weight:800;margin-bottom:1rem;">OpenClaw 引爆全网</h2>
+</div>
+<div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+<div class="reveal">
+<div style="display:flex;flex-direction:column;gap:1.5rem;">
+<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
+<span style="font-size:2rem;">🔥</span>
+<div><h4 data-i18n="t63" style="font-weight:700;margin-bottom:.2rem;">GitHub 60天碾压 Linux</h4><p data-i18n="t64" style="color:var(--muted);font-size:.9rem;">诞生仅两个月，Star 增速超越 Linux 十年积累</p></div>
+</div>
+<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
+<span style="font-size:2rem;">🎬</span>
+<div><h4 data-i18n="t65" style="font-weight:700;margin-bottom:.2rem;">全网热度持续升温</h4><p data-i18n="t66" style="color:var(--muted);font-size:.9rem;">B站、YouTube、Twitter 多平台热议，开发者社区讨论炸了</p></div>
+</div>
+<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
+<span style="font-size:2rem;">💰</span>
+<div><h4 data-i18n="t67" style="font-weight:700;margin-bottom:.2rem;">有人用它一周赚了 11 万美金</h4><p data-i18n="t68" style="color:var(--muted);font-size:.9rem;">全自动化赚钱，AI Agent 不眠不休地工作</p></div>
+</div>
+<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
+<span style="font-size:2rem;">🤝</span>
+<div><h4 data-i18n="t69" style="font-weight:700;margin-bottom:.2rem;">智谱发布全球首个「龙虾模型」</h4><p data-i18n="t70" style="color:var(--muted);font-size:.9rem;">GLM-5-Turbo 专为 OpenClaw 优化，国产模型首次与国际接轨</p></div>
+</div>
+</div>
+</div>
+<div class="reveal reveal-delay-2">
+<div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;">
+<div data-i18n="t71" style="font-size:13px;color:var(--muted);margin-bottom:1rem;text-align:center;">GitHub Stars 增长趋势 <span style="font-size:11px;">(点击曲线高亮)</span></div>
+<svg id="chart-svg" style="width:100%;height:auto;cursor:pointer;" viewbox="0 0 400 200">
+<line stroke="rgba(255,255,255,.08)" stroke-width="1" x1="40" x2="380" y1="180" y2="180"></line>
+<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="130" y2="130"></line>
+<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="80" y2="80"></line>
+<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="30" y2="30"></line>
+<polyline fill="none" id="line-linux" opacity=".5" points="40,170 120,165 200,155 280,140 360,120" stroke="#4a9eff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:all .3s;cursor:pointer"></polyline>
+<polyline fill="none" id="line-tf" opacity=".5" points="40,175 120,160 200,130 280,100 360,80" stroke="#ff6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:all .3s;cursor:pointer"></polyline>
+<polyline fill="none" id="line-oc" opacity="1" points="40,178 120,170 200,120 280,40 360,15" stroke="var(--accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="transition:all .3s;cursor:pointer"></polyline>
+<text fill="#4a9eff" font-family="Inter" font-size="10" id="label-linux" opacity=".5" style="transition:all .3s;cursor:pointer" x="365" y="118">Linux (10年+)</text>
+<text fill="#ff6b6b" font-family="Inter" font-size="10" id="label-tf" opacity=".5" style="transition:all .3s;cursor:pointer" x="365" y="78">TF (8年+)</text>
+<text font-size="22" style="cursor:pointer" x="330" y="10">🦞</text>
+<text fill="var(--accent)" font-family="Inter" font-size="11" font-weight="700" id="label-oc" x="280" y="28">OpenClaw (60天)</text>
+<text fill="var(--muted)" font-family="Inter" font-size="10" x="40" y="198">Day 0</text>
+<text fill="var(--muted)" font-family="Inter" font-size="10" x="200" y="198">Day 30</text>
+<text fill="var(--muted)" font-family="Inter" font-size="10" x="360" y="198">Day 60</text>
+</svg>
+<p data-i18n="t72" style="text-align:center;color:var(--muted);font-size:12px;margin-top:1rem;">点击曲线查看详情</p>
+<div id="chart-detail" style="text-align:center;margin-top:.8rem;font-size:13px;min-height:20px;color:var(--accent);transition:all .3s;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!-- ==================== LLM vs AGENT ==================== -->
 <section class="slide" id="llm-vs-agent">
 <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(255,107,53,.06) 0%,transparent 70%);pointer-events:none;"></div>
@@ -387,60 +441,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 </div>
 </div>
 </section>
-<!-- ==================== HOOK ==================== -->
-<section class="slide">
-<div class="slide-content">
-<div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 3rem;">
-<p class="section-label" data-i18n="sec-news-label">新闻速览</p>
-<h2 data-i18n="sec-news-title" style="font-size:2.5rem;font-weight:800;margin-bottom:1rem;">OpenClaw 引爆全网</h2>
-</div>
-<div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
-<div class="reveal">
-<div style="display:flex;flex-direction:column;gap:1.5rem;">
-<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
-<span style="font-size:2rem;">🔥</span>
-<div><h4 data-i18n="t63" style="font-weight:700;margin-bottom:.2rem;">GitHub 60天碾压 Linux</h4><p data-i18n="t64" style="color:var(--muted);font-size:.9rem;">诞生仅两个月，Star 增速超越 Linux 十年积累</p></div>
-</div>
-<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
-<span style="font-size:2rem;">🎬</span>
-<div><h4 data-i18n="t65" style="font-weight:700;margin-bottom:.2rem;">全网热度持续升温</h4><p data-i18n="t66" style="color:var(--muted);font-size:.9rem;">B站、YouTube、Twitter 多平台热议，开发者社区讨论炸了</p></div>
-</div>
-<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
-<span style="font-size:2rem;">💰</span>
-<div><h4 data-i18n="t67" style="font-weight:700;margin-bottom:.2rem;">有人用它一周赚了 11 万美金</h4><p data-i18n="t68" style="color:var(--muted);font-size:.9rem;">全自动化赚钱，AI Agent 不眠不休地工作</p></div>
-</div>
-<div onmouseout="this.style.transform='translateX(0)'" onmouseover="this.style.transform='translateX(6px)'" style="display:flex;gap:1rem;align-items:start;cursor:pointer;transition:all .2s;">
-<span style="font-size:2rem;">🤝</span>
-<div><h4 data-i18n="t69" style="font-weight:700;margin-bottom:.2rem;">智谱发布全球首个「龙虾模型」</h4><p data-i18n="t70" style="color:var(--muted);font-size:.9rem;">GLM-5-Turbo 专为 OpenClaw 优化，国产模型首次与国际接轨</p></div>
-</div>
-</div>
-</div>
-<div class="reveal reveal-delay-2">
-<div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;">
-<div data-i18n="t71" style="font-size:13px;color:var(--muted);margin-bottom:1rem;text-align:center;">GitHub Stars 增长趋势 <span style="font-size:11px;">(点击曲线高亮)</span></div>
-<svg id="chart-svg" style="width:100%;height:auto;cursor:pointer;" viewbox="0 0 400 200">
-<line stroke="rgba(255,255,255,.08)" stroke-width="1" x1="40" x2="380" y1="180" y2="180"></line>
-<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="130" y2="130"></line>
-<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="80" y2="80"></line>
-<line stroke="rgba(255,255,255,.04)" stroke-width="1" x1="40" x2="380" y1="30" y2="30"></line>
-<polyline fill="none" id="line-linux" opacity=".5" points="40,170 120,165 200,155 280,140 360,120" stroke="#4a9eff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:all .3s;cursor:pointer"></polyline>
-<polyline fill="none" id="line-tf" opacity=".5" points="40,175 120,160 200,130 280,100 360,80" stroke="#ff6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:all .3s;cursor:pointer"></polyline>
-<polyline fill="none" id="line-oc" opacity="1" points="40,178 120,170 200,120 280,40 360,15" stroke="var(--accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="transition:all .3s;cursor:pointer"></polyline>
-<text fill="#4a9eff" font-family="Inter" font-size="10" id="label-linux" opacity=".5" style="transition:all .3s;cursor:pointer" x="365" y="118">Linux (10年+)</text>
-<text fill="#ff6b6b" font-family="Inter" font-size="10" id="label-tf" opacity=".5" style="transition:all .3s;cursor:pointer" x="365" y="78">TF (8年+)</text>
-<text font-size="22" style="cursor:pointer" x="330" y="10">🦞</text>
-<text fill="var(--accent)" font-family="Inter" font-size="11" font-weight="700" id="label-oc" x="280" y="28">OpenClaw (60天)</text>
-<text fill="var(--muted)" font-family="Inter" font-size="10" x="40" y="198">Day 0</text>
-<text fill="var(--muted)" font-family="Inter" font-size="10" x="200" y="198">Day 30</text>
-<text fill="var(--muted)" font-family="Inter" font-size="10" x="360" y="198">Day 60</text>
-</svg>
-<p data-i18n="t72" style="text-align:center;color:var(--muted);font-size:12px;margin-top:1rem;">点击曲线查看详情</p>
-<div id="chart-detail" style="text-align:center;margin-top:.8rem;font-size:13px;min-height:20px;color:var(--accent);transition:all .3s;"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
 <!-- ==================== ORIGIN: VOICE MIRACLE ==================== -->
 <section class="slide" id="origin">
 <div class="slide-content" style="max-width:800px;margin:0 auto;">
@@ -528,89 +528,343 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <!-- ==================== THE BRIDGE ==================== -->
 <section class="slide" id="bridge" style="background:var(--bg2);">
 <div class="slide-content">
-<div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 2rem;">
-<p class="section-label" data-i18n="sec-bridge-label">核心理念</p>
-<h2 data-i18n="sec-bridge-title" style="font-size:2.5rem;font-weight:800;margin-bottom:.5rem;">造了多座桥</h2>
-<p data-i18n="sec-bridge-desc" style="color:var(--muted);">把命令行里的AI智能体，和普通人最常用的聊天软件连接了起来</p>
+<div class="reveal" style="text-align:center;max-width:900px;margin:0 auto 1.5rem;">
+<p class="section-label" data-i18n="sec-bridge-label">系统架构</p>
+<h2 data-i18n="sec-bridge-title" style="font-size:2.5rem;font-weight:800;margin-bottom:.5rem;">一个守护进程，连接一切</h2>
+<p data-i18n="sec-bridge-desc" style="color:var(--muted);">Gateway 守护进程是整个系统的心脏——它把 LLM、聊天平台、手机设备、文件系统编织成一个能真正干活的 AI 助手</p>
 </div>
-<!-- Capability map: LLM at center, branches outward -->
-<div class="reveal" style="max-width:800px;margin:0 auto 2.5rem;">
-<div style="position:relative;width:100%;aspect-ratio:1/1;">
-<!-- Center: LLM -->
-<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:10;">
-<div style="width:110px;height:110px;border-radius:50%;background:rgba(255,107,53,.08);border:2.5px solid var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;animation:pulse-glow 3s infinite;position:relative;">
-<span style="font-size:28px;">🧠</span>
-<span style="font-size:14px;font-weight:800;color:var(--accent);margin-top:2px;">LLM</span>
-</div>
-</div>
-<!-- Connection lines via SVG overlay -->
-<svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;" viewbox="0 0 800 800">
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="400" y1="400" y2="80"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="680" y1="400" y2="180"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="720" y1="400" y2="400"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="680" y1="400" y2="620"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="400" y1="400" y2="720"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="120" y1="400" y2="620"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="80" y1="400" y2="400"></line>
-<line stroke="rgba(255,107,53,.2)" stroke-dasharray="6,4" stroke-width="1.5" x1="400" x2="120" y1="400" y2="180"></line>
+<!-- Architecture Diagram -->
+<div class="reveal" style="max-width:860px;margin:0 auto 1.5rem;">
+<div style="width:100%;position:relative;">
+<svg viewBox="0 0 960 780" style="width:100%;height:auto;">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="rgba(255,255,255,.2)"/></marker>
+    <marker id="arr-b" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="rgba(99,179,237,.4)"/></marker>
+    <marker id="arr-o" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="rgba(255,179,71,.4)"/></marker>
+    <marker id="arr-g" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="rgba(71,207,151,.4)"/></marker>
+    <marker id="arr-p" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="rgba(165,120,255,.4)"/></marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="32" style="font-size:16px;fill:#fff;font-weight:700;text-anchor:middle">OpenClaw Architecture</text>
+  <text x="480" y="50" style="font-size:10px;fill:rgba(255,255,255,.4);font-weight:400;text-anchor:middle;letter-spacing:2px;text-transform:uppercase">Personal AI Agent Platform</text>
+
+  <!-- CHANNELS -->
+  <text x="30" y="82" style="font-size:9px;fill:rgba(255,255,255,.25);letter-spacing:1.5px;text-transform:uppercase;font-weight:600" data-i18n-arch="ch-label">消息渠道</text>
+
+  <rect x="80" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="130" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">💬 Telegram</text>
+  <text x="130" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">grammY</text>
+
+  <rect x="200" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="250" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">📱 WhatsApp</text>
+  <text x="250" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">Baileys</text>
+
+  <rect x="320" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="370" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">💬 Discord</text>
+  <text x="370" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">discord.js</text>
+
+  <rect x="440" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="490" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🔔 Signal</text>
+  <text x="490" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">signal-cli</text>
+
+  <rect x="560" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="610" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">💬 Slack</text>
+  <text x="610" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">Bolt SDK</text>
+
+  <rect x="680" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="730" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🍎 iMessage</text>
+  <text x="730" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">BlueBubbles</text>
+
+  <rect x="800" y="68" width="100" height="40" rx="8" fill="rgba(71,207,151,.08)" stroke="rgba(71,207,151,.3)" stroke-width="1.5"/>
+  <text x="850" y="86" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🌐 飞书</text>
+  <text x="850" y="99" style="font-size:8px;fill:rgba(255,255,255,.55);text-anchor:middle">lark-sdk</text>
+
+  <!-- Channel arrows -->
+  <line x1="130" y1="108" x2="130" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="250" y1="108" x2="250" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="370" y1="108" x2="370" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="490" y1="108" x2="490" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="610" y1="108" x2="610" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="730" y1="108" x2="730" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+  <line x1="850" y1="108" x2="850" y2="128" stroke="rgba(71,207,151,.4)" stroke-width="1.2" marker-end="url(#arr-g)"/>
+
+  <!-- GATEWAY -->
+  <rect x="60" y="130" width="840" height="360" rx="16" fill="rgba(99,179,237,.08)" stroke="rgba(99,179,237,.3)" stroke-width="1.5"/>
+  <text x="480" y="152" style="font-size:11px;fill:rgba(99,179,237,.6);letter-spacing:3px;text-transform:uppercase;text-anchor:middle;font-weight:600">GATEWAY DAEMON</text>
+
+  <!-- Gateway row 1 -->
+  <rect x="80" y="165" width="130" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="145" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">📨 Channel Plugins</text>
+  <text x="145" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Inbound / Outbound</text>
+
+  <rect x="225" y="165" width="130" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="290" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🔄 Command Queue</text>
+  <text x="290" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Session Lane + Global</text>
+
+  <rect x="370" y="165" width="130" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="435" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🔐 Auth & Pairing</text>
+  <text x="435" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Device Identity + Token</text>
+
+  <rect x="515" y="165" width="130" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="580" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">⏰ Cron Scheduler</text>
+  <text x="580" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Jobs / Heartbeats</text>
+
+  <rect x="660" y="165" width="110" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="715" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🔌 Plugin Hooks</text>
+  <text x="715" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">before/after callbacks</text>
+
+  <rect x="785" y="165" width="100" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="835" y="186" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🛡️ Sandbox</text>
+  <text x="835" y="204" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Exec Approvals</text>
+
+  <!-- Gateway row 2 -->
+  <rect x="80" y="235" width="150" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="155" y="256" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">📊 Session Manager</text>
+  <text x="155" y="274" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">History / Compaction</text>
+
+  <rect x="245" y="235" width="150" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="320" y="256" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🧠 Context Engine</text>
+  <text x="320" y="274" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Bootstrap / Skills / Prompt</text>
+
+  <rect x="410" y="235" width="150" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="485" y="256" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🌐 WebSocket Server</text>
+  <text x="485" y="274" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Port 18789 · Schema Validated</text>
+
+  <rect x="575" y="235" width="150" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="650" y="256" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🗄️ State Store</text>
+  <text x="650" y="274" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">SQLite / File System</text>
+
+  <rect x="740" y="235" width="145" height="55" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="812" y="256" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🔄 Update Manager</text>
+  <text x="812" y="274" style="font-size:10.5px;fill:rgba(255,255,255,.55);text-anchor:middle">Self-Update / Restart</text>
+
+  <!-- AGENT LOOP (inside Gateway) -->
+  <rect x="80" y="305" width="530" height="170" rx="12" fill="rgba(165,120,255,.06)" stroke="rgba(165,120,255,.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="345" y="325" style="font-size:10px;fill:rgba(165,120,255,.6);letter-spacing:3px;text-transform:uppercase;text-anchor:middle;font-weight:600">AGENT LOOP (per session)</text>
+
+  <!-- Agent steps -->
+  <rect x="95" y="338" width="82" height="42" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="136" y="354" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">📥 Intake</text>
+  <text x="136" y="369" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Message</text>
+
+  <rect x="190" y="338" width="82" height="42" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="231" y="354" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🔧 Context</text>
+  <text x="231" y="369" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Assembly</text>
+
+  <rect x="285" y="338" width="82" height="42" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="326" y="354" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🤖 Infer</text>
+  <text x="326" y="369" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">LLM Call</text>
+
+  <rect x="380" y="338" width="82" height="42" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="421" y="354" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">⚡ Tools</text>
+  <text x="421" y="369" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Exec</text>
+
+  <rect x="475" y="338" width="60" height="42" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="505" y="354" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">📤</text>
+  <text x="505" y="369" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Reply</text>
+
+  <!-- Loop arrow -->
+  <path d="M 505 380 L 505 392 Q 505 400 497 400 L 143 400 Q 136 400 136 393 L 136 382" stroke="rgba(165,120,255,.3)" stroke-width="1.2" fill="none" marker-end="url(#arr-p)"/>
+  <text x="320" y="398" style="font-size:8px;fill:rgba(165,120,255,.4);text-anchor:middle">loop</text>
+
+  <!-- Flow arrows -->
+  <line x1="177" y1="359" x2="188" y2="359" stroke="rgba(165,120,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="272" y1="359" x2="283" y2="359" stroke="rgba(165,120,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="367" y1="359" x2="378" y2="359" stroke="rgba(165,120,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="462" y1="359" x2="473" y2="359" stroke="rgba(165,120,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Agent sub-components -->
+  <rect x="95" y="415" width="100" height="32" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="145" y="433" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">🎯 Skills Engine</text>
+
+  <rect x="205" y="415" width="100" height="32" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="255" y="433" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">💾 Memory Search</text>
+
+  <rect x="315" y="415" width="100" height="32" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="365" y="433" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">🔄 Compaction</text>
+
+  <rect x="425" y="415" width="70" height="32" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="460" y="433" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">🔊 TTS</text>
+
+  <!-- Agent to Providers -->
+  <line x1="610" y1="365" x2="628" y2="365" stroke="rgba(255,179,71,.4)" stroke-width="1.2" marker-end="url(#arr-o)"/>
+
+  <!-- ACP / SUBAGENTS -->
+  <rect x="625" y="310" width="260" height="90" rx="10" fill="rgba(255,140,50,.06)" stroke="rgba(255,140,50,.25)" stroke-width="1.5"/>
+  <text x="755" y="330" style="font-size:9px;fill:rgba(255,140,50,.6);letter-spacing:2px;text-transform:uppercase;text-anchor:middle;font-weight:600">ACP / SUBAGENT ORCHESTRATION</text>
+
+  <rect x="640" y="340" width="72" height="30" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="676" y="357" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Codex</text>
+
+  <rect x="720" y="340" width="72" height="30" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="756" y="357" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Claude Code</text>
+
+  <rect x="800" y="340" width="72" height="30" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <text x="836" y="357" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Pi / Other</text>
+
+  <text x="755" y="388" style="font-size:9px;fill:rgba(255,140,50,.5);text-anchor:middle">sessions_spawn · subagents · sessions_send</text>
+
+  <!-- ACP arrow -->
+  <line x1="535" y1="380" x2="623" y2="355" stroke="rgba(255,140,50,.3)" stroke-width="1.2" marker-end="url(#arr-o)" stroke-dasharray="4 3"/>
+
+  <!-- MODEL PROVIDERS -->
+  <text x="650" y="428" style="font-size:9px;fill:rgba(255,255,255,.25);letter-spacing:1.5px;text-transform:uppercase;font-weight:600">模型提供商 (via API)</text>
+
+  <rect x="640" y="435" width="90" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="685" y="455" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🔵 OpenAI</text>
+
+  <rect x="740" y="435" width="90" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="785" y="455" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🟣 Anthropic</text>
+
+  <rect x="840" y="435" width="50" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="865" y="455" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🟢 ZAI</text>
+
+  <rect x="640" y="478" width="90" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="685" y="498" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🔵 Google</text>
+
+  <rect x="740" y="478" width="90" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="785" y="498" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🟠 Groq</text>
+
+  <rect x="840" y="478" width="50" height="35" rx="8" fill="rgba(255,179,71,.08)" stroke="rgba(255,179,71,.3)" stroke-width="1.5"/>
+  <text x="865" y="498" style="font-size:11px;fill:#fff;font-weight:600;text-anchor:middle">🟡 Local</text>
+
+  <!-- CLIENTS -->
+  <text x="30" y="530" style="font-size:9px;fill:rgba(255,255,255,.25);letter-spacing:1.5px;text-transform:uppercase;font-weight:600" data-i18n-arch="cl-label">控制面板</text>
+
+  <rect x="60" y="518" width="140" height="45" rx="8" fill="rgba(255,120,130,.08)" stroke="rgba(255,120,130,.3)" stroke-width="1.5"/>
+  <text x="130" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🖥️ macOS App</text>
+  <text x="130" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">SwiftUI</text>
+
+  <rect x="215" y="518" width="140" height="45" rx="8" fill="rgba(255,120,130,.08)" stroke="rgba(255,120,130,.3)" stroke-width="1.5"/>
+  <text x="285" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">💻 CLI</text>
+  <text x="285" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">openclaw commands</text>
+
+  <rect x="370" y="518" width="140" height="45" rx="8" fill="rgba(255,120,130,.08)" stroke="rgba(255,120,130,.3)" stroke-width="1.5"/>
+  <text x="440" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🌐 WebChat</text>
+  <text x="440" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Dashboard UI</text>
+
+  <path d="M 130 518 L 130 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+  <path d="M 285 518 L 285 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+  <path d="M 440 518 L 440 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+
+  <!-- NODES -->
+  <text x="570" y="530" style="font-size:9px;fill:rgba(255,255,255,.25);letter-spacing:1.5px;text-transform:uppercase;font-weight:600" data-i18n-arch="nd-label">节点设备</text>
+
+  <rect x="560" y="518" width="110" height="45" rx="8" fill="rgba(130,200,255,.08)" stroke="rgba(130,200,255,.3)" stroke-width="1.5"/>
+  <text x="615" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">📱 iOS</text>
+  <text x="615" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Camera / Location</text>
+
+  <rect x="685" y="518" width="110" height="45" rx="8" fill="rgba(130,200,255,.08)" stroke="rgba(130,200,255,.3)" stroke-width="1.5"/>
+  <text x="740" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">🤖 Android</text>
+  <text x="740" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Notifications</text>
+
+  <rect x="810" y="518" width="80" height="45" rx="8" fill="rgba(130,200,255,.08)" stroke="rgba(130,200,255,.3)" stroke-width="1.5"/>
+  <text x="850" y="538" style="font-size:12px;fill:#fff;font-weight:600;text-anchor:middle">💻 macOS</text>
+  <text x="850" y="553" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:middle">Screen / Files</text>
+
+  <path d="M 615 518 L 615 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+  <path d="M 740 518 L 740 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+  <path d="M 850 518 L 850 492" stroke="rgba(99,179,237,.4)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-b)"/>
+
+  <text x="755" y="582" style="font-size:8px;fill:rgba(130,200,255,.35);text-anchor:middle">WebSocket / Tailscale / Direct</text>
+
+  <!-- WORKSPACE -->
+  <rect x="60" y="600" width="840" height="110" rx="14" fill="rgba(255,214,102,.06)" stroke="rgba(255,214,102,.2)" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="480" y="622" style="font-size:10px;fill:rgba(255,214,102,.5);letter-spacing:3px;text-transform:uppercase;text-anchor:middle;font-weight:600">WORKSPACE ~/.openclaw/workspace</text>
+
+  <rect x="80" y="635" width="100" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="130" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">📝 MEMORY.md</text>
+
+  <rect x="195" y="635" width="95" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="242" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">👤 SOUL.md</text>
+
+  <rect x="305" y="635" width="95" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="352" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">📋 USER.md</text>
+
+  <rect x="415" y="635" width="110" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="470" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">⏰ HEARTBEAT.md</text>
+
+  <rect x="540" y="635" width="95" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="587" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">🔧 TOOLS.md</text>
+
+  <rect x="650" y="635" width="110" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="705" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">🗂️ memory/*.md</text>
+
+  <rect x="775" y="635" width="105" height="34" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,214,102,.15)" stroke-width="1.5"/>
+  <text x="827" y="654" style="font-size:10px;fill:rgba(255,255,255,.55);text-anchor:middle">📂 SKILLS/</text>
+
+  <!-- Workspace arrows to Context Engine -->
+  <path d="M 130 635 L 130 615 L 280 615 L 280 492" stroke="rgba(255,214,102,.2)" stroke-width="1" fill="none" marker-end="url(#arr)" stroke-dasharray="3 3"/>
+  <path d="M 470 635 L 470 615 L 320 615 L 320 492" stroke="rgba(255,214,102,.2)" stroke-width="1" fill="none" marker-end="url(#arr)" stroke-dasharray="3 3"/>
+  <path d="M 705 635 L 705 615 L 360 615 L 360 492" stroke="rgba(255,214,102,.2)" stroke-width="1" fill="none" marker-end="url(#arr)" stroke-dasharray="3 3"/>
+
+  <!-- Heartbeat trigger -->
+  <path d="M 580 220 L 580 310 L 345 310 L 345 338" stroke="rgba(99,179,237,.2)" stroke-width="1" fill="none" marker-end="url(#arr-b)" stroke-dasharray="3 2"/>
+  <text x="470" y="307" style="font-size:7px;fill:rgba(99,179,237,.35)">heartbeat trigger</text>
+
+  <!-- LEGEND -->
+  <rect x="60" y="728" width="12" height="12" rx="3" fill="rgba(99,179,237,.3)" stroke="rgba(99,179,237,.5)"/>
+  <text x="78" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Gateway</text>
+
+  <rect x="140" y="728" width="12" height="12" rx="3" fill="rgba(165,120,255,.2)" stroke="rgba(165,120,255,.4)" stroke-dasharray="3 2"/>
+  <text x="158" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Agent Loop</text>
+
+  <rect x="240" y="728" width="12" height="12" rx="3" fill="rgba(255,179,71,.3)" stroke="rgba(255,179,71,.5)"/>
+  <text x="258" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Model Providers</text>
+
+  <rect x="365" y="728" width="12" height="12" rx="3" fill="rgba(71,207,151,.3)" stroke="rgba(71,207,151,.5)"/>
+  <text x="383" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Channels</text>
+
+  <rect x="450" y="728" width="12" height="12" rx="3" fill="rgba(255,120,130,.3)" stroke="rgba(255,120,130,.5)"/>
+  <text x="468" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Clients</text>
+
+  <rect x="525" y="728" width="12" height="12" rx="3" fill="rgba(130,200,255,.3)" stroke="rgba(130,200,255,.5)"/>
+  <text x="543" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Nodes</text>
+
+  <rect x="590" y="728" width="12" height="12" rx="3" fill="rgba(255,214,102,.15)" stroke="rgba(255,214,102,.3)" stroke-dasharray="3 2"/>
+  <text x="608" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">Workspace</text>
+
+  <rect x="675" y="728" width="12" height="12" rx="3" fill="rgba(255,140,50,.2)" stroke="rgba(255,140,50,.4)"/>
+  <text x="693" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">ACP/Subagents</text>
+
+  <line x1="790" y1="734" x2="820" y2="734" stroke="rgba(99,179,237,.4)" stroke-dasharray="4 3"/>
+  <text x="828" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">WS / Tailscale</text>
+
+  <line x1="910" y1="734" x2="930" y2="734" stroke="rgba(255,179,71,.4)"/>
+  <text x="920" y="738" style="font-size:9px;fill:rgba(255,255,255,.55);text-anchor:start">API</text>
+
+  <text x="920" y="768" style="font-size:8px;fill:rgba(255,255,255,.15);text-anchor:end">openclaw.ai · 2026</text>
 </svg>
-<!-- Branch nodes -->
-<!-- 1: 聊天平台 top -->
-<div style="position:absolute;left:50%;top:5%;transform:translateX(-50%);z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">💬</div>
-<div data-i18n="t99" style="font-size:12px;font-weight:700;margin-top:6px;">聊天平台</div>
-<div data-i18n="t100" style="font-size:10px;color:var(--muted);margin-top:2px;">微信 / Telegram / 飞书</div>
-</div>
-<!-- 2: 浏览器 top-right -->
-<div style="position:absolute;right:8%;top:16%;z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">🌐</div>
-<div data-i18n="t101" style="font-size:12px;font-weight:700;margin-top:6px;">浏览器</div>
-<div data-i18n="t102" style="font-size:10px;color:var(--muted);margin-top:2px;">浏览网页 / 截图</div>
-</div>
-<!-- 3: 文件系统 right -->
-<div style="position:absolute;right:3%;top:50%;transform:translateY(-50%);z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">📁</div>
-<div data-i18n="t103" style="font-size:12px;font-weight:700;margin-top:6px;">文件系统</div>
-<div data-i18n="t104" style="font-size:10px;color:var(--muted);margin-top:2px;">读写文件 / 整理</div>
-</div>
-<!-- 4: 定时任务 bottom-right -->
-<div style="position:absolute;right:8%;bottom:16%;z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">⏰</div>
-<div data-i18n="t105" style="font-size:12px;font-weight:700;margin-top:6px;">定时任务</div>
-<div data-i18n="t106" style="font-size:10px;color:var(--muted);margin-top:2px;">Cron / 定时提醒</div>
-</div>
-<!-- 5: 记忆系统 bottom -->
-<div style="position:absolute;left:50%;bottom:5%;transform:translateX(-50%);z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">💾</div>
-<div data-i18n="t107" style="font-size:12px;font-weight:700;margin-top:6px;">记忆系统</div>
-<div data-i18n="t108" style="font-size:10px;color:var(--muted);margin-top:2px;">跨会话持久记忆</div>
-</div>
-<!-- 6: 手机控制 bottom-left -->
-<div style="position:absolute;left:8%;bottom:16%;z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">📱</div>
-<div data-i18n="t109" style="font-size:12px;font-weight:700;margin-top:6px;">手机控制</div>
-<div data-i18n="t110" style="font-size:10px;color:var(--muted);margin-top:2px;">拍照 / 定位 / 通知</div>
-</div>
-<!-- 7: 代码执行 left -->
-<div style="position:absolute;left:3%;top:50%;transform:translateY(-50%);z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">⚡</div>
-<div data-i18n="t111" style="font-size:12px;font-weight:700;margin-top:6px;">代码执行</div>
-<div data-i18n="t112" style="font-size:10px;color:var(--muted);margin-top:2px;">Shell / 脚本 / 工具</div>
-</div>
-<!-- 8: 技能生态 top-left -->
-<div style="position:absolute;left:8%;top:16%;z-index:5;text-align:center;">
-<div style="width:72px;height:72px;border-radius:50%;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto;">🧩</div>
-<div data-i18n="t113" style="font-size:12px;font-weight:700;margin-top:6px;">技能生态</div>
-<div style="font-size:10px;color:var(--muted);margin-top:2px;">6000+ Skills</div>
-</div>
-<!-- Center label -->
-<div data-i18n="t114" style="position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--muted);white-space:nowrap;">OpenClaw = LLM + 以上所有能力</div>
 </div>
 </div>
-<!-- Platform pills -->
-<div class="reveal" style="text-align:center;margin-top:1rem;">
-<div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
-<span class="channel-pill">💬 WhatsApp</span><span class="channel-pill">📨 Telegram</span><span class="channel-pill">🌀 Discord</span><span class="channel-pill">📱 iMessage</span><span class="channel-pill">🔐 Signal</span><span class="channel-pill">💼 Slack</span><span class="channel-pill" data-i18n="t115">🐦 飞书</span><span class="channel-pill">🟣 Matrix</span><span class="channel-pill">🌐 WebChat</span><span class="channel-pill" style="color:var(--muted);">+20</span>
+<!-- Architecture explanation -->
+<div class="reveal" style="max-width:860px;margin:0 auto;">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:.5rem;">🔵 <span data-i18n="arch-gw-title">Gateway 守护进程</span></div>
+<div data-i18n="arch-gw-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">整个系统的核心。负责接收来自各个渠道的消息、管理会话状态、调度定时任务、处理设备配对认证。Agent Loop 运行在 Gateway 进程内部。</div>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:rgba(165,120,255,.9);margin-bottom:.5rem;">🟣 <span data-i18n="arch-al-title">Agent Loop 智能体循环</span></div>
+<div data-i18n="arch-al-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">每个会话独立运行。消息 → 组装上下文 → 调用 LLM → 执行工具 → 返回结果。如果需要继续操作，自动循环（tool loop）。</div>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:rgba(71,207,151,.9);margin-bottom:.5rem;">🟢 <span data-i18n="arch-ch-title">消息渠道 Channels</span></div>
+<div data-i18n="arch-ch-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">通过各自的 SDK 库（grammY、Baileys、discord.js 等）连接 7+ 个聊天平台。消息统一进入 Gateway 处理。</div>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:rgba(255,179,71,.9);margin-bottom:.5rem;">🟠 <span data-i18n="arch-mp-title">模型提供商 Model Providers</span></div>
+<div data-i18n="arch-mp-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">支持 OpenAI、Anthropic、Google、ZAI、Groq 以及本地模型（Ollama）。可以随时切换，不绑定单一供应商。</div>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:rgba(255,120,130,.9);margin-bottom:.5rem;">🔴 <span data-i18n="arch-cl-title">控制面板 Clients</span></div>
+<div data-i18n="arch-cl-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">macOS 原生应用、命令行工具、Web 仪表盘。通过 WebSocket 实时连接 Gateway，用于监控和配置。</div>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;">
+<div style="font-size:13px;font-weight:700;color:rgba(130,200,255,.9);margin-bottom:.5rem;">🩵 <span data-i18n="arch-nd-title">节点设备 Nodes</span></div>
+<div data-i18n="arch-nd-desc" style="font-size:12px;color:var(--muted);line-height:1.6;">手机和电脑上的伴侣 App。提供摄像头、GPS 定位、屏幕截图、文件访问等能力，扩展 Agent 的感知范围。</div>
+</div>
 </div>
 </div>
 </div>
@@ -745,7 +999,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <span data-i18n="t141" style="background:rgba(255,107,53,.15);color:var(--accent);padding:4px 12px;border-radius:100px;font-size:12px;font-weight:600;">案例 1</span>
 <h2 data-i18n="t142" style="font-size:2rem;font-weight:800;">清空浏览记录</h2>
 </div>
-<p data-i18n="t143" style="color:var(--muted);font-size:.9rem;margin-bottom:2rem;">过年电脑没关，亲戚小孩进了大人的世界。点击按钮看两种方式的对比 ↓</p>
+<p data-i18n="t143" style="color:var(--muted);font-size:.9rem;margin-bottom:2rem;">点击按钮看两种方式的对比 ↓</p>
 </div>
 <!-- Tabs -->
 <div class="reveal" style="display:flex;gap:8px;margin-bottom:2rem;">
@@ -928,14 +1182,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <div class="chat-container" id="course-chat-bubbles" style="max-width:550px;"></div>
 </div>
 <!-- File comparison -->
-<div id="course-files" style="display:none;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem;opacity:0;transform:translateY(20px);transition:all .8s ease-out;">
-<div>
-<div data-i18n="t195" style="font-size:12px;color:var(--muted);margin-bottom:.6rem;font-weight:600;">📄 原始文件：比赛秩序册 PDF（扫描件）</div>
-<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-height:300px;"><img src="pdf_page2.png" style="width:100%;display:block;object-fit:cover;object-position:top;"/></div>
-</div>
+<div id="course-files" style="display:none;margin-top:2rem;opacity:0;transform:translateY(20px);transition:all .8s ease-out;">
 <div>
 <div data-i18n="t196" style="font-size:12px;color:var(--success);margin-bottom:.6rem;font-weight:600;">✅ 最终输出：成绩填写表 Excel</div>
-<div style="background:var(--card);border:1px solid rgba(48,209,88,.2);border-radius:14px;overflow:hidden;max-height:300px;"><img src="excel_preview.png" style="width:100%;display:block;object-fit:cover;object-position:top;"/></div>
+<div style="background:var(--card);border:1px solid rgba(48,209,88,.2);border-radius:14px;overflow:hidden;max-height:200px;max-width:280px;"><img src="excel_preview.png" style="width:100%;display:block;object-fit:cover;object-position:top;"/></div>
 </div>
 </div>
 </div>
@@ -1070,6 +1320,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <h2 data-i18n="t248" style="font-size:2rem;font-weight:800;">上下文灾难 — 对话太长，忘了前面的</h2>
 </div>
 <p data-i18n="t249" style="color:var(--muted);font-size:.9rem;margin-bottom:1.5rem;">AI 的记忆不是无限的。任务越复杂、对话越长，越容易在早期步骤中遗漏细节 ↓</p>
+<!-- Hero screenshot -->
 <button class="interact-btn" data-i18n="t250" id="ctx-btn" onclick="playContextDemo()" style="background:rgba(255,214,10,.1);border-color:rgba(255,214,10,.3);color:var(--warn);">▶ 点击演示</button>
 <button class="replay-btn" data-i18n="t251" id="ctx-replay" onclick="resetDemo('ctx-btn','ctx-replay')">🔄 重置演示</button>
 </div>
@@ -1102,6 +1353,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 </div>
 </div>
 <!-- Task flow -->
+<!-- Two screenshots now injected into animation -->
 <!-- chat bubbles injected by JS -->
 <div id="ctx-chat-wrap" style="margin-top:1rem;"></div>
 <!-- Result -->
@@ -1152,9 +1404,52 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <p data-i18n="t275" style="color:var(--muted);font-size:.9rem;line-height:1.7;">从 <a href="https://clawhub.ai" style="color:var(--accent);text-decoration:none;" target="_blank">ClawHub</a> 市场一键安装，社区贡献的标准化流程直接复用。就像 App Store 一样简单，装上就有。</p>
 </div>
 </div>
+<!-- Hot Skills Examples -->
+<div class="reveal" style="margin-bottom:2rem;">
+<h3 data-i18n="t276a" style="font-size:1.1rem;font-weight:700;margin-bottom:1rem;text-align:center;">🔥 <span data-i18n="t276a">ClawHub 热门 Skills 举例</span></h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+<!-- Skill 1: Self-Improving Agent -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">🧠</span><div><div style="font-weight:700;font-size:.9rem;">Self-Improving Agent</div><div data-i18n="sk1-meta" style="font-size:.7rem;color:var(--muted);">@ivangdavila · 151k 下载</div></div></div>
+<p data-i18n="sk1-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">AI 自己反思、自己纠错、自己学习。每次犯错后自动改进，越用越聪明。</p>
+<span data-i18n="sk1-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(48,209,88,.1);color:var(--success);border:1px solid rgba(48,209,88,.2);">🏆 下载量 Top 3</span>
+</div>
+<!-- Skill 2: Gog (Google Workspace) -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">📧</span><div><div style="font-weight:700;font-size:.9rem;">Gog (Google Workspace)</div><div data-i18n="sk2-meta" style="font-size:.7rem;color:var(--muted);">@steipete · 148k 下载</div></div></div>
+<p data-i18n="sk2-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">一句话管理 Gmail、日历、云盘、文档、表格。AI 直接操作你的整个 Google 办公套件。</p>
+<span data-i18n="sk2-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(255,214,10,.1);color:var(--warn);border:1px solid rgba(255,214,10,.2);">⚡ 效率神器</span>
+</div>
+<!-- Skill 3: Polymarket -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">💰</span><div><div style="font-weight:700;font-size:.9rem;">Polymarket</div><div data-i18n="sk3-meta" style="font-size:.7rem;color:var(--muted);">@joelchance · 91k 下载</div></div></div>
+<p data-i18n="sk3-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">查询预测市场赔率、追踪价格走势、发现热门事件。AI 帮你做数据驱动的决策。</p>
+<span data-i18n="sk3-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(255,107,53,.1);color:var(--accent);border:1px solid rgba(255,107,53,.2);">💵 能赚钱</span>
+</div>
+<!-- Skill 4: Nano PDF -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">📄</span><div><div style="font-weight:700;font-size:.9rem;">Nano PDF</div><div data-i18n="sk4-meta" style="font-size:.7rem;color:var(--muted);">@steipete · 85k 下载</div></div></div>
+<p data-i18n="sk4-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">用自然语言编辑 PDF。「把第三页删掉」「合并这两个文件」——说一句话就行。</p>
+<span data-i18n="sk4-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(48,209,88,.1);color:var(--success);border:1px solid rgba(48,209,88,.2);">✨ 超实用</span>
+</div>
+<!-- Skill 5: AdMapix -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">📊</span><div><div style="font-weight:700;font-size:.9rem;">AdMapix</div><div data-i18n="sk5-meta" style="font-size:.7rem;color:var(--muted);">@fly0pants · 80k 下载</div></div></div>
+<p data-i18n="sk5-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">广告情报 + App 分析助手。搜索竞品广告素材、查看下载量排名、追踪收入数据。</p>
+<span data-i18n="sk5-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(255,107,53,.1);color:var(--accent);border:1px solid rgba(255,107,53,.2);">💼 商业分析</span>
+</div>
+<!-- Skill 6: Proactive Agent -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .3s;" onmouseover="this.style.borderColor='rgba(255,107,53,.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;"><span style="font-size:1.4rem;">🦞</span><div><div style="font-weight:700;font-size:.9rem;">Proactive Agent</div><div data-i18n="sk6-meta" style="font-size:.7rem;color:var(--muted);">@halthelobster · 136k 下载</div></div></div>
+<p data-i18n="sk6-desc" style="color:var(--muted);font-size:.8rem;line-height:1.6;">把 AI 从「被动执行」变成「主动预判」。它会在你开口之前就想好你需要什么，自动安排任务。</p>
+<span data-i18n="sk6-tag" style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:rgba(165,120,255,.1);color:rgba(165,120,255,.9);border:1px solid rgba(165,120,255,.2);">🔮 未来感</span>
+</div>
+</div>
+<p style="text-align:center;color:var(--muted);font-size:.8rem;margin-top:1rem;"><span data-i18n="t276b">更多 Skills：</span><a href="https://clawhub.ai/skills?sort=downloads" style="color:var(--accent);text-decoration:none;" target="_blank">clawhub.ai/skills</a> · <span data-i18n="t276c">47,995 个 Skills 不断增长中</span></p>
+</div>
 <div class="reveal" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
 <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.8rem 1rem;flex:1;min-width:130px;text-align:center;">
-<div style="font-size:1.5rem;font-weight:900;color:var(--accent);">6,000+</div>
+<div style="font-size:1.5rem;font-weight:900;color:var(--accent);">47,995</div>
 <div data-i18n="t276" style="font-size:11px;color:var(--muted);margin-top:.2rem;">ClawHub 市场 Skills</div>
 </div>
 <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.8rem 1rem;flex:1;min-width:130px;text-align:center;">
@@ -1204,7 +1499,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <div class="slide-content" style="text-align:center;max-width:900px;">
 <div class="reveal">
 <p class="section-label" data-i18n="sec-verdict-label">总结</p>
-<h2 data-i18n="sec-verdict-title" style="font-size:2.8rem;font-weight:800;margin-bottom:2.5rem;">里程碑，不是魔法</h2>
+<h2 data-i18n="sec-verdict-title" style="font-size:2.8rem;font-weight:800;margin-bottom:2.5rem;">OpenClaw 并不完善，但它是通向 AI Agent 时代的里程碑</h2>
 </div>
 <div class="reveal two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2.5rem;">
 <div class="success-card" style="text-align:left;">
@@ -1523,6 +1818,15 @@ function playCourseDemo(){
   }
   // Chat story
   addChat('user','👤','帮我把桌面上的比赛秩序册 PDF 做成 Excel，每个名字下面加一行空行填成绩，做成成绩填写单',0);
+  // Insert PDF screenshot after user message
+  setTimeout(()=>{
+    const wrap=document.getElementById('course-chat-bubbles');
+    const imgDiv=document.createElement('div');
+    imgDiv.style.cssText='opacity:0;transform:translateY(10px);transition:all .4s ease-out;align-self:flex-start;max-width:320px;margin-top:4px;';
+    imgDiv.innerHTML='<div style=\'font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:600;\'>📄 比赛秩序册 PDF（扫描件）</div><img src="pdf_page2.png" style="width:100%;border-radius:12px;border:1px solid var(--border);display:block;"/>';
+    wrap.appendChild(imgDiv);
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{imgDiv.style.opacity='1';imgDiv.style.transform='translateY(0)'}));
+  },400);
   setStep(1,'','读取 PDF...',800);
   addChat('ai','🤖','好的，先读取 PDF 文件内容...',1500);
   addChat('system','⚠️','pdf 工具报错：该 PDF 为扫描件，无法提取文字',3000);
@@ -1544,7 +1848,7 @@ function playCourseDemo(){
   setStep(5,'active','✅ 自查通过',24000);
   courseTimers.push(setTimeout(()=>{
     const files=document.getElementById('course-files');
-    files.style.display='grid';
+    files.style.display='block';
     requestAnimationFrame(()=>requestAnimationFrame(()=>{files.style.opacity='1';files.style.transform='translateY(0)'}));
   },25000));
   courseTimers.push(setTimeout(()=>showReplay('course-btn','course-replay'),26000));
@@ -1702,6 +2006,15 @@ function playContextDemo(){
   }
   // Story: editing 马杯成绩单, AI forgets early data due to long context
   addCtxChat('system','📋 <b style="font-size:1.05rem;">事件背景</b> — 马杯游泳积分汇总工作，从 21:16 开始，持续 3 个多小时，涉及四场比赛成绩录入、计分规则反复修改、特长生处理、院系排名生成等 20+ 条指令。',500);
+  // Inject hero screenshot as first chat image
+  setTimeout(()=>{
+    const wrap=document.getElementById('ctx-chat-wrap');
+    const imgDiv=document.createElement('div');
+    imgDiv.className='chat-bubble chat-system';
+    imgDiv.innerHTML='<img src="ctx-disaster-hero.png" style="height:160px;border-radius:10px;border:1px solid var(--border);">';
+    wrap.appendChild(imgDiv);
+    setTimeout(()=>imgDiv.classList.add('show'),100);
+  },500);
   addCtxChat('user','🧑','帮我把第一场成绩按名次给积分，第一到第八名分别 9、8、7…1 分',1500);
   addCtxChat('ai','🤖','好的，OCR 识别成绩单，生成积分表 ✅<br>15 个项目 × 前 8 名 = 已录入 120 条数据',4000);
   addCtxChat('user','🧑','第二场也加上，去掉戴泽远、陈珂等 13 个人，名次顺延',6000);
@@ -1720,9 +2033,11 @@ function playContextDemo(){
   ctxTimers.push(setTimeout(()=>{
     const div=document.createElement('div');
     div.className='chat-bubble chat-system';
-    div.innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;max-width:400px;">'+
-      '<img src="IMG_5205.PNG" style="width:100%;border-radius:10px;border:1px solid var(--border);">'+
-      '<img src="IMG_5206.PNG" style="width:100%;border-radius:10px;border:1px solid var(--border);">'+
+    div.innerHTML='<div style="display:flex;gap:.5rem;max-width:100%;overflow-x:auto;">'+
+      '<img src="IMG_5205.PNG" style="height:160px;border-radius:10px;border:1px solid var(--border);flex-shrink:0;">'+
+      '<img src="IMG_5206.PNG" style="height:160px;border-radius:10px;border:1px solid var(--border);flex-shrink:0;">'+
+      '<img src="ctx-disaster-a.png" style="height:160px;border-radius:10px;border:1px solid var(--border);flex-shrink:0;">'+
+      '<img src="ctx-disaster-b.png" style="height:160px;border-radius:10px;border:1px solid var(--border);flex-shrink:0;">'+
       '</div>';
     document.getElementById('ctx-chat-wrap').appendChild(div);
     setTimeout(()=>div.classList.add('show'),100);
@@ -1880,7 +2195,7 @@ const i18n = {
   't140': { zh: '作业已完成！共搜索12 篇资料，整理为 3 个章节写入文档 📄✓ ~/Desktop/作业.docx 已更新', en: 'Homework done! Searched 12 sources, organized into 3 chapters 📄✓ ~/Desktop/homework.docx updated' },
   't141': { zh: '案例 1', en: 'Case 1' },
   't142': { zh: '清空浏览记录', en: 'Clear Browsing History' },
-  't143': { zh: '过年电脑没关，亲戚小孩进了大人的世界。点击按钮看两种方式的对比 ↓', en: 'Left the computer on during New Year, kids got into the grown-up\'s world. Click to compare two approaches ↓' },
+  't143': { zh: '点击按钮看两种方式的对比 ↓', en: 'Click to compare two approaches ↓' },
   't144': { zh: '🧑 普通人（6步）', en: '🧑 Normal person (6 steps)' },
   't145': { zh: '🤖 OpenClaw（1句话）', en: '🤖 OpenClaw (1 sentence)' },
   't146': { zh: '打开 Chrome → 右上角三个点', en: 'Open Chrome → click three dots' },
@@ -2010,6 +2325,27 @@ const i18n = {
   't274': { zh: '能力即插即用', en: 'Plug-and-Play Capabilities' },
   't275': { zh: '从ClawHub市场一键安装，社区贡献的标准化流程直接复用。就像 App Store 一样简单，装上就有。', en: 'One-click install from the ClawHub marketplace. Reuse community-contributed standardized workflows. As simple as the App Store — install and it\'s ready.' },
   't276': { zh: 'ClawHub 市场 Skills', en: 'ClawHub Marketplace Skills' },
+  't276a': { zh: '🔥 ClawHub 热门 Skills 举例', en: '🔥 Popular Skills on ClawHub' },
+  't276b': { zh: '更多 Skills：', en: 'More Skills: ' },
+  't276c': { zh: '47,995 个 Skills 不断增长中', en: '47,995 skills and growing' },
+  'sk1-meta': { zh: '@ivangdavila · 151k 下载', en: '@ivangdavila · 151k downloads' },
+  'sk1-desc': { zh: 'AI 自己反思、自己纠错、自己学习。每次犯错后自动改进，越用越聪明。', en: 'AI that reflects on its own mistakes, corrects them, and learns. Improves automatically after every error — the more you use it, the smarter it gets.' },
+  'sk1-tag': { zh: '🏆 下载量 Top 3', en: '🏆 Top 3 Downloads' },
+  'sk2-meta': { zh: '@steipete · 148k 下载', en: '@steipete · 148k downloads' },
+  'sk2-desc': { zh: '一句话管理 Gmail、日历、云盘、文档、表格。AI 直接操作你的整个 Google 办公套件。', en: 'Manage Gmail, Calendar, Drive, Docs, and Sheets with a single sentence. AI directly operates your entire Google Workspace.' },
+  'sk2-tag': { zh: '⚡ 效率神器', en: '⚡ Productivity' },
+  'sk3-meta': { zh: '@joelchance · 91k 下载', en: '@joelchance · 91k downloads' },
+  'sk3-desc': { zh: '查询预测市场赔率、追踪价格走势、发现热门事件。AI 帮你做数据驱动的决策。', en: 'Query prediction market odds, track price movements, and discover trending events. AI helps you make data-driven decisions.' },
+  'sk3-tag': { zh: '💵 能赚钱', en: '💵 Money-Making' },
+  'sk4-meta': { zh: '@steipete · 85k 下载', en: '@steipete · 85k downloads' },
+  'sk4-desc': { zh: '用自然语言编辑 PDF。「把第三页删掉」「合并这两个文件」——说一句话就行。', en: 'Edit PDFs with natural language. "Delete page 3" or "merge these two files" — just say it.' },
+  'sk4-tag': { zh: '✨ 超实用', en: '✨ Super Useful' },
+  'sk5-meta': { zh: '@fly0pants · 80k 下载', en: '@fly0pants · 80k downloads' },
+  'sk5-desc': { zh: '广告情报 + App 分析助手。搜索竞品广告素材、查看下载量排名、追踪收入数据。', en: 'Ad intelligence & app analytics assistant. Search competitor ad creatives, view download rankings, and track revenue data.' },
+  'sk5-tag': { zh: '💼 商业分析', en: '💼 Business Intel' },
+  'sk6-meta': { zh: '@halthelobster · 136k 下载', en: '@halthelobster · 136k downloads' },
+  'sk6-desc': { zh: '把 AI 从「被动执行」变成「主动预判」。它会在你开口之前就想好你需要什么，自动安排任务。', en: 'Transforms AI from a passive task-follower into a proactive partner. It anticipates your needs before you ask and schedules tasks autonomously.' },
+  'sk6-tag': { zh: '🔮 未来感', en: '🔮 Futuristic' },
   't277': { zh: 'AI 可以自创 Skills', en: 'AI can create its own Skills' },
   't278': { zh: '过去我们打开一个 App，学习它的界面，适应它的规则。现在，你只需要说出你想要什么，Agent 帮你搞定一切。', en: 'We used to open an app, learn its interface, adapt to its rules. Now, you just say what you want, and the Agent handles everything.' },
   't279': { zh: 'App 时代', en: 'The App Era' },
@@ -2045,9 +2381,21 @@ const i18n = {
   'sec-origin-label': { zh: '起源', en: 'Origin' },
   'sec-origin-title': { zh: '一小时搭的小玩具，改变了世界', en: 'A One-Hour Toy That Changed the World' },
   'sec-origin-desc': { zh: '2025 年 11 月，Peter Steinberger 在聊天软件上造了一个能控制电脑的 AI', en: 'November 2025 — Peter Steinberger built an AI that controls computers, right inside a chat app' },
-  'sec-bridge-label': { zh: '核心理念', en: 'Core Idea' },
-  'sec-bridge-title': { zh: '造了多座桥', en: 'Building Bridges' },
-  'sec-bridge-desc': { zh: '把命令行里的AI智能体，和普通人最常用的聊天软件连接了起来', en: 'Connecting the CLI-based AI agent with the chat apps everyday people actually use' },
+  'sec-bridge-label': { zh: '系统架构', en: 'Architecture' },
+  'sec-bridge-title': { zh: '一个守护进程，连接一切', en: 'One Daemon to Connect Them All' },
+  'sec-bridge-desc': { zh: 'Gateway 守护进程是整个系统的心脏——它把 LLM、聊天平台、手机设备、文件系统编织成一个能真正干活的 AI 助手', en: 'The Gateway daemon is the heart of it all — weaving LLMs, chat platforms, phone devices, and your filesystem into an AI assistant that actually gets things done.' },
+  'arch-gw-title': { zh: 'Gateway 守护进程', en: 'Gateway Daemon' },
+  'arch-gw-desc': { zh: '整个系统的核心。负责接收来自各个渠道的消息、管理会话状态、调度定时任务、处理设备配对认证。Agent Loop 运行在 Gateway 进程内部。', en: 'The core of the system. Receives messages from all channels, manages session state, schedules cron jobs, handles device pairing and auth. The Agent Loop runs inside the Gateway process.' },
+  'arch-al-title': { zh: 'Agent Loop 智能体循环', en: 'Agent Loop' },
+  'arch-al-desc': { zh: '每个会话独立运行。消息 → 组装上下文 → 调用 LLM → 执行工具 → 返回结果。如果需要继续操作，自动循环（tool loop）。', en: 'Runs independently per session. Intake → Context Assembly → LLM Inference → Tool Execution → Reply. Loops automatically when more actions are needed (tool loop).' },
+  'arch-ch-title': { zh: '消息渠道 Channels', en: 'Message Channels' },
+  'arch-ch-desc': { zh: '通过各自的 SDK 库（grammY、Baileys、discord.js 等）连接 7+ 个聊天平台。消息统一进入 Gateway 处理。', en: 'Connects to 7+ chat platforms via their SDK libraries (grammY, Baileys, discord.js, etc.). All messages flow into the Gateway for processing.' },
+  'arch-mp-title': { zh: '模型提供商 Model Providers', en: 'Model Providers' },
+  'arch-mp-desc': { zh: '支持 OpenAI、Anthropic、Google、ZAI、Groq 以及本地模型（Ollama）。可以随时切换，不绑定单一供应商。', en: 'Supports OpenAI, Anthropic, Google, ZAI, Groq, and local models (Ollama). Switch anytime — not locked to a single provider.' },
+  'arch-cl-title': { zh: '控制面板 Clients', en: 'Control Clients' },
+  'arch-cl-desc': { zh: 'macOS 原生应用、命令行工具、Web 仪表盘。通过 WebSocket 实时连接 Gateway，用于监控和配置。', en: 'Native macOS app, CLI, and Web dashboard. Connect to Gateway via WebSocket in real-time for monitoring and configuration.' },
+  'arch-nd-title': { zh: '节点设备 Nodes', en: 'Node Devices' },
+  'arch-nd-desc': { zh: '手机和电脑上的伴侣 App。提供摄像头、GPS 定位、屏幕截图、文件访问等能力，扩展 Agent 的感知范围。', en: 'Companion apps on phones and computers. Provide camera, GPS, screen capture, file access, extending the Agent\'s perception.' },
   'sec-demo-label': { zh: '运行原理', en: 'How It Works' },
   'sec-demo-title': { zh: '说一句话，OpenClaw 帮你干活', en: 'Say the Word, OpenClaw Gets It Done' },
   'sec-demo-desc': { zh: '看 OpenClaw 如何帮你在电脑桌面上完成一份需要搜索网页的作业', en: 'Watch OpenClaw complete a homework assignment that requires web research on your desktop' },
@@ -2058,7 +2406,7 @@ const i18n = {
   'sec-paradigm-label': { zh: '范式转变', en: 'Paradigm Shift' },
   'sec-paradigm-title': { zh: '从 App 到 Agent', en: 'From App to Agent' },
   'sec-verdict-label': { zh: '总结', en: 'Verdict' },
-  'sec-verdict-title': { zh: '里程碑，不是魔法', en: 'A Milestone, Not Magic' },
+  'sec-verdict-title': { zh: 'OpenClaw 并不完善，但它是通向 AI Agent 时代的里程碑', en: 'OpenClaw isn\'t perfect yet, but it\'s a milestone on the road to the AI Agent era' },
   't31': { zh: '全球用户最多的模型家族。综合能力强，API 文档完善，适合入门和日常使用。', en: 'The most widely used model family. Strong all-around performance, comprehensive API docs, great for beginners and daily use.' },
   't32': { zh: '推荐型号', en: 'Recommended' },
   't33': { zh: '价格', en: 'Price' },

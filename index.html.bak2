@@ -134,7 +134,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 .typing-dots span:nth-child(3){animation-delay:.4s}
 @keyframes typingDot{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
 
-@media(max-width:768px){.hero-title{font-size:2.2rem!important;font-size:clamp(1.6rem,5vw,2.2rem)!important}.two-col,.three-col,.four-col{grid-template-columns:1fr!important}.slide{padding:4rem 1.2rem!important;min-height:auto!important}.slide-auto{padding:3rem 1.2rem!important}.slide-content{padding:0 .5rem}nav .nav-links{display:none!important}.hero-subtitle{font-size:1rem!important}.stat-number{font-size:2rem!important}.chat-bubble{max-width:95%!important;font-size:13px!important}.terminal-body{font-size:12px!important;padding:14px!important}.file-tree{font-size:11px!important}.section-label{font-size:13px!important}.cta-btn{padding:12px 24px!important;font-size:15px!important}.feature-card{padding:1.5rem!important}.flow-row{flex-direction:column!important}.flow-arrow{transform:rotate(90deg)}.quote-block{padding:1rem 1.2rem!important;margin:1.5rem 0!important}img{max-width:100%;height:auto}}@media(max-width:480px){.hero-title{font-size:1.5rem!important}.slide{padding:3rem 1rem!important}.stat-number{font-size:1.6rem!important}.terminal{border-radius:12px!important}.feature-card{border-radius:14px!important;padding:1.2rem!important}.cta-btn{padding:10px 20px!important;font-size:14px!important}}@media(min-width:769px) and (max-width:1024px){.hero-title{font-size:2.6rem!important}.two-col{grid-template-columns:1fr 1fr!important;gap:1.5rem!important}.four-col{grid-template-columns:repeat(2,1fr)!important}.slide{padding:4rem 1.5rem!important}}
+@media(max-width:768px){.hero-title{font-size:2.2rem!important}.two-col,.three-col,.four-col{grid-template-columns:1fr!important}.slide{padding:4rem 1.5rem}.flow-row{flex-direction:column!important}.flow-arrow{transform:rotate(90deg)}}
 
 /* Image zoom lightbox */
 .img-zoom{cursor:zoom-in;transition:transform .2s}.img-zoom:hover{transform:scale(1.02)}
@@ -149,7 +149,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <nav id="nav">
 <div style="max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:52px;">
 <a href="#" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--fg);"><span style="font-size:24px;">🦞</span><span style="font-weight:700;font-size:18px;">llw24 — OpenClaw — Introduction</span></a>
-<div class="nav-links" style="display:flex;gap:1rem;align-items:center;font-size:13px;">
+<div style="display:flex;gap:1rem;align-items:center;font-size:13px;">
 <a href="#hook" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-home">首页</span></a>
 <a href="#llm-vs-agent" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-concepts">概念</span></a>
 <a href="#models" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-models">模型</span></a>

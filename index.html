@@ -161,8 +161,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <a href="#defects" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-defects">缺陷</span></a>
 <a href="#verdict" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-verdict">总结</span></a>
 <a href="#trial" onmouseout="this.style.color='var(--muted)'" onmouseover="this.style.color='var(--fg)'" style="color:var(--muted);text-decoration:none;"><span data-i18n="nav-trial">体验</span></a>
-<button id="lang-toggle" onclick="toggleLang()" style="background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--fg);padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;white-space:nowrap;">🌐 EN</button>
 </div>
+<button id="lang-toggle" onclick="toggleLang()" style="background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--fg);padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;white-space:nowrap;">🌐 EN</button>
 </div>
 </nav>
 <!-- ==================== HERO ==================== -->
@@ -1812,7 +1812,7 @@ let currentLang = localStorage.getItem('lang') || (navigator.language.startsWith
 
 const i18n = {
   'hero-author': { zh: '英语课 pre：李林炜', en: 'English Presentation by Li Linwei' },
-  'hero-badge': { zh: '诞生60天 · GitHub热度碾压Linux · 13.3万播放', en: 'Born 60 days ago · Surpassed Linux on GitHub · 133K views' },
+  'hero-badge': { zh: '诞生60天 · GitHub热度碾压Linux · 13.3万播放', en: 'Born 60 days · Surpassed Linux on GitHub · 133K views' },
   'hero-stat-days': { zh: '从诞生到爆火', en: 'Days to go viral' },
   'hero-stat-platforms': { zh: '适配平台', en: 'Platforms' },
   'hero-title-accent': { zh: 'OpenClaw', en: 'OpenClaw' },

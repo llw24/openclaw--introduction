@@ -1879,7 +1879,7 @@ function playBilibiliDemo(){
   const L=currentLang;
   const userMsg=L==='zh'
     ?'下周学生会要举行东操音乐跑林俊杰专场活动，请按照以下歌单从B站下载歌曲，下载后按照顺序将各个视频拼接到一起：<br><br>1. 江南<br>2. 可惜没如果<br>3. 修炼爱情<br>4. 她说<br>5. 不潮不用花钱<br>6. 醉赤壁'
-    :'The Student Union is hosting a JJ Lin music run next week. Please download the following songs from Bilibili and concatenate them in order:<br><br>1. Jiangnan<br>2.可惜没如果<br>3. 修炼爱情<br>4. 她说<br>5. 不潮不用花钱<br>6. 醉赤壁';
+    :'The Student Union is hosting a JJ Lin music run next week. Please download the following songs from Bilibili and concatenate them in order:<br><br>1. 江南<br>2.可惜没如果<br>3. 修炼爱情<br>4. 她说<br>5. 不潮不用花钱<br>6. 醉赤壁';
   const aiMsg1=L==='zh'?'好的！我来写一个 Python 脚本，使用 yt-dlp 下载B站视频，然后用 ffmpeg 拼接。先装一下依赖 ↓':'Sure! I\'ll write a Python script using yt-dlp to download Bilibili videos, then concatenate with ffmpeg. Installing dependencies first ↓';
   const aiMsg3=L==='zh'?'依赖已安装，现在创建下载脚本 ↓':'Dependencies installed. Now creating the download script ↓';
   const bubbles=[
@@ -1919,7 +1919,7 @@ function playBilibiliDemo(){
   // Add downloading bubbles
   const dlText=L==='zh'
     ?'⬇️ 正在下载：<span style="color:var(--accent);">江南</span> — 100% ✅<br>⬇️ 正在下载：<span style="color:var(--accent);">可惜没如果</span> — 100% ✅<br>⬇️ 正在下载：<span style="color:var(--accent);">修炼爱情</span> — 100% ✅<br>⬇️ 正在下载：<span style="color:var(--accent);">她说</span> — 100% ✅<br>⬇️ 正在下载：<span style="color:var(--accent);">不潮不用花钱</span> — 100% ✅<br>⬇️ 正在下载：<span style="color:var(--accent);">醉赤壁</span> — 100% ✅'
-    :'⬇️ Downloading: <span style="color:var(--accent);">Jiangnan</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">可惜没如果</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">修炼爱情</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">她说</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">不潮不用花钱</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">醉赤壁</span> — 100% ✅';
+    :'⬇️ Downloading: <span style="color:var(--accent);">江南</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">可惜没如果</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">修炼爱情</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">她说</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">不潮不用花钱</span> — 100% ✅<br>⬇️ Downloading: <span style="color:var(--accent);">醉赤壁</span> — 100% ✅';
   const concatMsg=L==='zh'?'🔗 正在用 ffmpeg 拼接视频……':'🔗 Concatenating with ffmpeg...';
   const doneMsg=L==='zh'
     ?'<div style="background:rgba(48,209,88,.08);border:1px solid rgba(48,209,88,.2);border-radius:10px;padding:8px 12px;margin-top:4px;"><span style="color:var(--success);font-weight:700;">✅ 全部完成！</span><br>6 首歌曲已按顺序拼接为：<br><span style="font-family:JetBrains Mono,monospace;font-size:12px;color:var(--accent);">~/Desktop/林俊杰专场_完整版.mp4</span><br>总时长：约 26 分钟</div>'

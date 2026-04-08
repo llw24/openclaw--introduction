@@ -1190,93 +1190,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 </div>
 </div>
 </section>
-<!-- ==================== TOOLS & SKILLS ==================== -->
-<section class="slide" id="tools">
-<div class="slide-content">
-<div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 2.5rem;">
-<p class="section-label" data-i18n="sec-tools-label">工具体系</p>
-<h2 data-i18n="sec-tools-title" style="font-size:2.5rem;font-weight:800;margin-bottom:.5rem;">工具 + Skills 生态</h2>
-<p data-i18n="sec-tools-desc" style="color:var(--muted);">光有大模型还不够。点击工具卡片查看详情 ↓</p>
-</div>
-<div class="reveal four-col" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1000px;margin:0 auto;">
-<div class="feature-card" onclick="toggleToolDetail(this,'exec')" style="text-align:center;padding:1.5rem;cursor:pointer;">
-<div style="font-size:2rem;margin-bottom:.5rem;">⚡</div>
-<div class="mono" style="font-weight:700;color:var(--accent);">exec</div>
-<div data-i18n="t197" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
-<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
-<div data-i18n="t198">• 执行终端 Shell 命令</div>
-<div data-i18n="t199">• Claude Code 的精神延续</div>
-<div data-i18n="t200">• 可以装软件、改文件、跑脚本</div>
-<div data-i18n="t201">• 是最核心的能力</div>
-</div>
-</div>
-<div class="feature-card" onclick="toggleToolDetail(this,'read')" style="text-align:center;padding:1.5rem;cursor:pointer;">
-<div style="font-size:2rem;margin-bottom:.5rem;">📖</div>
-<div class="mono" style="font-weight:700;color:var(--accent);">read</div>
-<div data-i18n="t202" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
-<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
-<div data-i18n="t203">• 读取各种文件格式</div>
-<div data-i18n="t204">• 代码、PDF、图片、Word</div>
-<div data-i18n="t205">• 支持截图分析</div>
-<div data-i18n="t206">• 可批量处理</div>
-</div>
-</div>
-<div class="feature-card" onclick="toggleToolDetail(this,'browser')" style="text-align:center;padding:1.5rem;cursor:pointer;">
-<div style="font-size:2rem;margin-bottom:.5rem;">🌐</div>
-<div class="mono" style="font-weight:700;color:var(--accent);">browser</div>
-<div data-i18n="t207" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
-<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
-<div data-i18n="t208">• 控制浏览器自动化</div>
-<div data-i18n="t209">• 截图、点击、填表、导航</div>
-<div data-i18n="t210">• 代替你操作网页</div>
-<div data-i18n="t211">• 支持登录态保持</div>
-</div>
-</div>
-<div class="feature-card" onclick="toggleToolDetail(this,'cron')" style="text-align:center;padding:1.5rem;cursor:pointer;">
-<div style="font-size:2rem;margin-bottom:.5rem;">⏰</div>
-<div class="mono" style="font-weight:700;color:var(--accent);">cron</div>
-<div data-i18n="t212" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
-<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
-<div data-i18n="t213">• 定时任务调度器</div>
-<div data-i18n="t214">• 设置提醒、定期检查</div>
-<div data-i18n="t215">• 自动化工作流</div>
-<div data-i18n="t216">• 支持 cron 表达式</div>
-</div>
-</div>
-</div>
-<!-- Skills -->
-<div class="reveal" style="max-width:1000px;margin:2rem auto 0;">
-<div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;">
-<div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
-<span style="font-size:2rem;">🧩</span>
-<div><h3 data-i18n="t217" style="font-weight:700;">Skills 生态</h3><p data-i18n="t218" style="color:var(--muted);font-size:.85rem;">提前写好的"说明书"，让全世界AI爱好者共享能力</p></div>
-</div>
-<div id="skill-tags" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.5rem;">
-<span class="skill-tag" data-i18n="t219" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🌤️ 天气查询</span>
-<span class="skill-tag" data-i18n="t220" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📈 A股分析</span>
-<span class="skill-tag" data-i18n="t221" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📝 SEO写作</span>
-<span class="skill-tag" data-i18n="t222" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🔒 安全审计</span>
-<span class="skill-tag" data-i18n="t223" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🎨 前端设计</span>
-<span class="skill-tag" data-i18n="t224" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📊 数据分析</span>
-<span class="skill-tag" data-i18n="t225" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🏥 健康管理</span>
-<span class="skill-tag" data-i18n="t226" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🎮 游戏助手</span>
-<span class="skill-tag" data-i18n="t227" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📧 邮件管理</span>
-<span class="skill-tag" data-i18n="t228" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🌐 网页摘要</span>
-<span class="skill-tag" data-i18n="t229" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">💰 金融分析</span>
-<span class="skill-tag" data-i18n="t230" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🧠 学术搜索</span>
-<span class="skill-tag" data-i18n="t231" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📹 视频处理</span>
-<span class="skill-tag" data-i18n="t232" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📱 飞书集成</span>
-<span class="skill-tag" data-i18n="t233" style="color:var(--accent);border-color:rgba(255,107,53,.3);">+6000 更多...</span>
-</div>
-<div style="display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;">
-<div style="text-align:center;"><div style="font-size:2.2rem;font-weight:900;color:var(--accent);">2,800+</div><div style="color:var(--muted);font-size:12px;">GitHub Awesome OC Skills</div></div>
-<div style="text-align:center;"><div style="font-size:2.2rem;font-weight:900;color:var(--accent);">6,000+</div><div data-i18n="t234" style="color:var(--muted);font-size:12px;">ClawHub 市场</div></div>
-<div style="text-align:center;"><div style="font-size:2.2rem;">🤖</div><div data-i18n="t235" style="color:var(--muted);font-size:12px;">AI 可以自创 Skills</div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
 <!-- ==================== SECURITY RISK ==================== -->
 <section class="slide" id="risks" style="background:var(--bg2);">
 <div class="slide-content" style="max-width:1000px;">
@@ -1374,6 +1287,93 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px) s
 <div style="font-size:1.5rem;font-weight:900;color:var(--accent);">~30%</div>
 <div data-i18n="t266" style="font-size:11px;color:var(--muted);margin-top:.2rem;">真正留给对话的空间</div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== TOOLS & SKILLS ==================== -->
+<section class="slide" id="tools">
+<div class="slide-content">
+<div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 2.5rem;">
+<p class="section-label" data-i18n="sec-tools-label">工具体系</p>
+<h2 data-i18n="sec-tools-title" style="font-size:2.5rem;font-weight:800;margin-bottom:.5rem;">工具 + Skills 生态</h2>
+<p data-i18n="sec-tools-desc" style="color:var(--muted);">光有大模型还不够。点击工具卡片查看详情 ↓</p>
+</div>
+<div class="reveal four-col" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1000px;margin:0 auto;">
+<div class="feature-card" onclick="toggleToolDetail(this,'exec')" style="text-align:center;padding:1.5rem;cursor:pointer;">
+<div style="font-size:2rem;margin-bottom:.5rem;">⚡</div>
+<div class="mono" style="font-weight:700;color:var(--accent);">exec</div>
+<div data-i18n="t197" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
+<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
+<div data-i18n="t198">• 执行终端 Shell 命令</div>
+<div data-i18n="t199">• Claude Code 的精神延续</div>
+<div data-i18n="t200">• 可以装软件、改文件、跑脚本</div>
+<div data-i18n="t201">• 是最核心的能力</div>
+</div>
+</div>
+<div class="feature-card" onclick="toggleToolDetail(this,'read')" style="text-align:center;padding:1.5rem;cursor:pointer;">
+<div style="font-size:2rem;margin-bottom:.5rem;">📖</div>
+<div class="mono" style="font-weight:700;color:var(--accent);">read</div>
+<div data-i18n="t202" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
+<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
+<div data-i18n="t203">• 读取各种文件格式</div>
+<div data-i18n="t204">• 代码、PDF、图片、Word</div>
+<div data-i18n="t205">• 支持截图分析</div>
+<div data-i18n="t206">• 可批量处理</div>
+</div>
+</div>
+<div class="feature-card" onclick="toggleToolDetail(this,'browser')" style="text-align:center;padding:1.5rem;cursor:pointer;">
+<div style="font-size:2rem;margin-bottom:.5rem;">🌐</div>
+<div class="mono" style="font-weight:700;color:var(--accent);">browser</div>
+<div data-i18n="t207" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
+<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
+<div data-i18n="t208">• 控制浏览器自动化</div>
+<div data-i18n="t209">• 截图、点击、填表、导航</div>
+<div data-i18n="t210">• 代替你操作网页</div>
+<div data-i18n="t211">• 支持登录态保持</div>
+</div>
+</div>
+<div class="feature-card" onclick="toggleToolDetail(this,'cron')" style="text-align:center;padding:1.5rem;cursor:pointer;">
+<div style="font-size:2rem;margin-bottom:.5rem;">⏰</div>
+<div class="mono" style="font-weight:700;color:var(--accent);">cron</div>
+<div data-i18n="t212" style="color:var(--muted);font-size:.8rem;margin-top:.2rem;">点击展开详情</div>
+<div class="tool-detail" style="display:none;margin-top:1rem;text-align:left;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;">
+<div data-i18n="t213">• 定时任务调度器</div>
+<div data-i18n="t214">• 设置提醒、定期检查</div>
+<div data-i18n="t215">• 自动化工作流</div>
+<div data-i18n="t216">• 支持 cron 表达式</div>
+</div>
+</div>
+</div>
+<!-- Skills -->
+<div class="reveal" style="max-width:1000px;margin:2rem auto 0;">
+<div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;">
+<div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+<span style="font-size:2rem;">🧩</span>
+<div><h3 data-i18n="t217" style="font-weight:700;">Skills 生态</h3><p data-i18n="t218" style="color:var(--muted);font-size:.85rem;">提前写好的"说明书"，让全世界AI爱好者共享能力</p></div>
+</div>
+<div id="skill-tags" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.5rem;">
+<span class="skill-tag" data-i18n="t219" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🌤️ 天气查询</span>
+<span class="skill-tag" data-i18n="t220" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📈 A股分析</span>
+<span class="skill-tag" data-i18n="t221" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📝 SEO写作</span>
+<span class="skill-tag" data-i18n="t222" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🔒 安全审计</span>
+<span class="skill-tag" data-i18n="t223" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🎨 前端设计</span>
+<span class="skill-tag" data-i18n="t224" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📊 数据分析</span>
+<span class="skill-tag" data-i18n="t225" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🏥 健康管理</span>
+<span class="skill-tag" data-i18n="t226" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🎮 游戏助手</span>
+<span class="skill-tag" data-i18n="t227" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📧 邮件管理</span>
+<span class="skill-tag" data-i18n="t228" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🌐 网页摘要</span>
+<span class="skill-tag" data-i18n="t229" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">💰 金融分析</span>
+<span class="skill-tag" data-i18n="t230" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">🧠 学术搜索</span>
+<span class="skill-tag" data-i18n="t231" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📹 视频处理</span>
+<span class="skill-tag" data-i18n="t232" onclick="this.style.borderColor='var(--accent)';this.style.color='var(--fg)'">📱 飞书集成</span>
+<span class="skill-tag" data-i18n="t233" style="color:var(--accent);border-color:rgba(255,107,53,.3);">+6000 更多...</span>
+</div>
+<div style="display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;">
+<div style="text-align:center;"><div style="font-size:2.2rem;font-weight:900;color:var(--accent);">2,800+</div><div style="color:var(--muted);font-size:12px;">GitHub Awesome OC Skills</div></div>
+<div style="text-align:center;"><div style="font-size:2.2rem;font-weight:900;color:var(--accent);">6,000+</div><div data-i18n="t234" style="color:var(--muted);font-size:12px;">ClawHub 市场</div></div>
+<div style="text-align:center;"><div style="font-size:2.2rem;">🤖</div><div data-i18n="t235" style="color:var(--muted);font-size:12px;">AI 可以自创 Skills</div></div>
 </div>
 </div>
 </div>
@@ -2375,7 +2375,7 @@ const i18n = {
   't30': { zh: '🇺🇸 国外 · 生态最广', en: '🇺🇸 International · Largest ecosystem' },
   't300': { zh: '欢迎来到智能体的时代', en: 'Welcome to the Age of AI Agents' },
   't301': { zh: '在这个极客时代，技术不但是大公司的特权。只要愿意开始，每个人都可以拥有属于自己的贾维斯。', en: 'In this maker era, technology isn\'t just for big companies. Anyone willing to start can have their own Jarvis.' },
-  't302': { zh: '智谱 AI', en: 'Zhipu AI' },
+  't302': { zh: '智谱 AI', en: 'Z.ai' },
   'sec-news-label': { zh: '新闻速览', en: 'In the News' },
   'sec-news-title': { zh: 'OpenClaw 引爆全网', en: 'OpenClaw Takes the Internet by Storm' },
   'sec-origin-label': { zh: '起源', en: 'Origin' },
